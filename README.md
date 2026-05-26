@@ -93,3 +93,4 @@ This project strictly adheres to **intermediate-friendly software engineering st
 3. **Fail-safe Design**: Missing external packages (like `lightgbm`, `sentence_transformers`, `torch`, `transformers`) are handled gracefully with clear logging warnings and automatic feature/model fallbacks.
 4. **Caching & Reusability**: Computations like embedding extraction are cached automatically, saving precious GPU execution minutes during iterative model testing.
 
+
