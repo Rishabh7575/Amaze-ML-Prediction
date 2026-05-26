@@ -72,13 +72,13 @@ def main():
     else:
         ensemble_predictions = lr_test
 
-    # # 4. Generate Final Submission File
-    # submission_df = pd.DataFrame({
-    #     'sample_id': test_df['sample_id'],
-    #     'price': ensemble_predictions
-    # })
-    # submission_df.to_csv(config.SAMPLE_OUT_CSV, index=False)
-    # print(f"[INFO] Submission saved successfully to: {config.SAMPLE_OUT_CSV}")
+    # 4. Generate Final Submission File
+    submission_df = pd.DataFrame({
+        'sample_id': test_df['sample_id'],
+        'price': ensemble_predictions
+    })
+    submission_df.to_csv(config.SAMPLE_OUT_CSV, index=False)
+    print(f"[INFO] Submission saved successfully to: {config.SAMPLE_OUT_CSV}")
 
 
 if __name__ == '__main__':
