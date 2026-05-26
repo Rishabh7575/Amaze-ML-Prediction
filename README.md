@@ -85,12 +85,3 @@ The Streamlit app lets you inspect cache outputs, review traces in real-time, co
 
 ---
 
-## 💡 Architecture & Design Philosophy
-
-This project strictly adheres to **intermediate-friendly software engineering standards**:
-1. **No Heavy OOP**: Focuses on clear, side-effect-free, functional design which is simple to read, debug, and maintain.
-2. **Centralized Configuration**: All file paths, hyperparameters, and directory initializations reside in `src/config.py`.
-3. **Fail-safe Design**: Missing external packages (like `lightgbm`, `sentence_transformers`, `torch`, `transformers`) are handled gracefully with clear logging warnings and automatic feature/model fallbacks.
-4. **Caching & Reusability**: Computations like embedding extraction are cached automatically, saving precious GPU execution minutes during iterative model testing.
-
-
